@@ -187,13 +187,28 @@ CV %<>% print_section('experience')
 <!--CV %<>% print_section('by_me_press')-->
 <!--```-->
 
+Weiterbildung {data-icon=}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('further_education')
+```
 
 
 Publikationen {data-icon=book}
 --------------------------------------------------------------------------------
 
 ```{r}
-CV %<>% print_section('academic_articles')
+CV %<>% print_section('academic_articles',
+                      glue_template = "{authors} ({end}). {title}. *{journal}*. {doi} \n\n\n")
+```
+
+
+Auslandserfahrung {data-icon=globe}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('foreign_experience')
 ```
 
 
