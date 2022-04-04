@@ -102,20 +102,20 @@ CV %<>% print_text_block("intro")
 
 
 
-Bildungsweg {data-icon=graduation-cap data-concise=true}
+Ausbildung {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
 ```{r}
-CV %<>% print_section('Bildungsweg')
+CV %<>% print_section('Ausbildung')
 ```
 
 
 
-Research Experience {data-icon=laptop}
+Wissenschaftliche und berufliche Erfahrung {data-icon=laptop}
 --------------------------------------------------------------------------------
 
 ```{r}
-CV %<>% print_section('research_positions')
+CV %<>% print_section('experience')
 ```
 
 
