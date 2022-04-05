@@ -46,21 +46,22 @@ Aside
 ================================================================================
 
 ```{r}
-# Build interactive network of positions colored by section
-# and connected if they occurred in the same year
+# Picture
 knitr::include_graphics("../img/DSC_9554.jpg")
 ```
 
 
-```{r}
-if(params$pdf_mode){
-  cat("View this CV online with links at _nickstrayer.me/datadrivencv/_")
-} else {
-  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/moritzroesch/automated-cv/CV_de/roesch_cv_de.pdf)")
-}
-```
+Biographie {#bio}
+----------------------------------------------------------------------------------
 
-Contact {#contact}
+Geboren am 29.04.1997 in Radolfzell am Bodensee.<br/>
+Ich begeistere mich für die Analyse, Auswertung und Visualisierung von Geodaten.
+Meine Interessens- und Forschungsschwerpunkte liegen in der Nutzung von passiven und aktiven Satellitendaten zur
+Analyse von geographischen Prozessen der Erdoberfläche. Insbesondere das Monitoring von Naturgefahren,
+sowie das Monitoring des globalen Wandels der Landoberflächen in alpinen und urbanen Regionen.
+
+
+  Kontakt {#contact}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -69,37 +70,11 @@ CV %>% print_contact_info()
 
 
 
-Language Skills {#skills}
---------------------------------------------------------------------------------
-
-```{r}
-CV %>% print_skill_bars()
-```
-
-
-
-Disclaimer {#disclaimer}
---------------------------------------------------------------------------------
-
-Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
-
-The source code is available [on GitHub](https://github.com/moritzroesch/automated-cv).
-
-Last updated on `r Sys.Date()`.
-
-
-
 Main
 ================================================================================
 
 Moritz Rösch {#title}
 --------------------------------------------------------------------------------
-
-```{r}
-# Note the special double pipe so we modify the CV object in place
-CV %<>% print_text_block("intro") 
-```
-
 
 
 Ausbildung {data-icon=graduation-cap data-concise=true}
@@ -111,83 +86,51 @@ CV %<>% print_section('education')
 
 
 
-Wissenschaftliche und berufliche Erfahrung {data-icon=laptop}
+Wissenschaftliche und berufliche Erfahrung {data-icon=suitcase}
 --------------------------------------------------------------------------------
+
 
 ```{r}
 CV %<>% print_section('experience')
 ```
 
 
+Software Skills {data-icon=laptop}
+--------------------------------------------------------------------------------
 
-<!--Industry Experience {data-icon=suitcase}-->
-<!--------------------------------------------------------------------------------->
-<!---->
-<!--::: aside-->
-<!--```{r}-->
-<!--CV %<>% print_text_block('industy_experience_aside')-->
-<!--```-->
-<!--:::-->
-<!---->
-<!--```{r}-->
-<!--CV %<>% print_section('industry_positions')-->
-<!--```-->
-<!---->
-<!--<!-- These breaks just force a new page so section doesnt get cut off -->
-<!--<br>-->
-<!--<br>-->
-<!--<br>-->
+::: aside
 
-<!--Teaching Experience {data-icon=chalkboard-teacher}
-<!--------->
-<!--
-<!--::: a-->
-<!--```{r-->
-<!--CV %<-->
-<!--```
-<!--:::
-<!--
-<!--```{r-->
-<!--CV %<-->
-<!--```
-<!--
-<!--
-<!--
-<!--Selec-->
-<!--------->
-<!--
-<!--::: a-->
-<!--```{r-->
-<!--CV %<-->
-<!--```
-<!--:::
-<!--
-<!--```{r-->
-<!--CV %<-->
-<!--```
-<!--
-<!--
-<!--
-<!--Selec-->
-<!--------->
-<!--
-<!--```{r-->
-<!--CV %<-->
-<!--```-->
-<!---->
-<!---->
-<!--<br>-->
-<!--<br>-->
+#### <i class="fas fa-search-plus"></i> Interessensfelder
+
+- Passive & aktive Fernerkundung
+
+- Spatial Data Science
+
+- Naturgefahren
+
+- Alpine Regionen
+
+- Urbane Regionen
+
+- Synthetic Aperture Radar
+
+- GIS und Mapping Anwendung
+:::
+
+```{r}
+CV %<>% print_section('skills')
+```
 
 
-<!--Selected Press (By)  {data-icon=newspaper}-->
-<!------------------------------------------------------------------------------------>
-<!---->
-<!--```{r}-->
-<!--CV %<>% print_section('by_me_press')-->
-<!--```-->
+Sprachen {data-icon=language}
+--------------------------------------------------------------------------------
 
-Weiterbildung {data-icon=}
+```{r}
+CV %<>% print_section('language')
+```
+
+
+Weiterbildung {data-icon=university}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -213,7 +156,10 @@ CV %<>% print_section('foreign_experience')
 
 
 
-<!--```{r}-->
-<!--CV %<>% print_links()-->
-<!--```-->
+:::aside
+Made with the R package [**datadrivencv**](https://github.com/nstrayer/datadrivencv) and [**pagedown**](https://github.com/rstudio/pagedown). 
 
+The source code is available [on GitHub](https://github.com/moritzroesch/automated-cv).
+
+Last updated on `r Sys.Date()`.
+:::
