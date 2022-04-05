@@ -55,10 +55,7 @@ Biographie {#bio}
 ----------------------------------------------------------------------------------
 
 Geboren am 29.04.1997 in Radolfzell am Bodensee.<br/>
-Ich begeistere mich für die Analyse, Auswertung und Visualisierung von Geodaten.
-Meine Interessens- und Forschungsschwerpunkte liegen in der Nutzung von passiven und aktiven Satellitendaten zur
-Analyse von geographischen Prozessen der Erdoberfläche. Insbesondere das Monitoring von Naturgefahren,
-sowie das Monitoring des globalen Wandels der Landoberflächen in alpinen und urbanen Regionen.
+Ich begeistere mich für die Analyse, Auswertung und Visualisierung von Geodaten. Meine Interessens- und Forschungsschwerpunkte liegen in der Nutzung von passiven und aktiven Satellitendaten zur Analyse von geographischen Prozessen der Erdoberfläche. Insbesondere das Monitoring von Naturgefahren,sowie das Monitoring des globalen Wandels der Landoberflächen in alpinen und urbanen Regionen.
 
 
   Kontakt {#contact}
@@ -98,8 +95,11 @@ CV %<>% print_section('experience')
 Software Skills {data-icon=laptop}
 --------------------------------------------------------------------------------
 
-::: aside
+```{r}
+CV %<>% print_section('skills')
+```
 
+::: aside
 #### <i class="fas fa-search-plus"></i> Interessensfelder
 
 - Passive & aktive Fernerkundung
@@ -116,11 +116,6 @@ Software Skills {data-icon=laptop}
 
 - GIS und Mapping Anwendung
 :::
-
-```{r}
-CV %<>% print_section('skills')
-```
-
 
 Sprachen {data-icon=language}
 --------------------------------------------------------------------------------
