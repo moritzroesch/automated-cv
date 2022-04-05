@@ -157,9 +157,9 @@ CV %<>% print_section('foreign_experience')
 
 
 :::aside
-Made with the R package [**datadrivencv**](https://github.com/nstrayer/datadrivencv) and [**pagedown**](https://github.com/rstudio/pagedown). 
+Erstellt mit den R Paketen [**datadrivencv**](https://github.com/nstrayer/datadrivencv) und [**pagedown**](https://github.com/rstudio/pagedown). 
 
-The source code is available [on GitHub](https://github.com/moritzroesch/automated-cv).
+Der Quellcode ist verfügbar auf [GitHub](https://github.com/moritzroesch/automated-cv).
 
-Last updated on `r Sys.Date()`.
+Zuletzt akutalisiert am `r Sys.Date()`.
 :::
