@@ -45,20 +45,19 @@ if(params$pdf_mode) {
 Aside
 ================================================================================
 
+
 ```{r}
-# Build interactive network of positions colored by section
-# and connected if they occurred in the same year
-datadrivencv::build_network_logo(CV$entries_data)
+# Picture
+knitr::include_graphics("../img/DSC_9554.jpg")
 ```
 
 
-```{r}
-if(params$pdf_mode){
-  cat("View this CV online with links at _nickstrayer.me/datadrivencv/_")
-} else {
-  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/moritzroesch/automated-cv/tree/main/CV_en/output/roes_cv_en.pdf)")
-}
-```
+Biographie {#bio}
+----------------------------------------------------------------------------------
+
+Born on 29.04.1997 in Radolfzell, Germany.<br/>
+I am passionate about the analysis, evaluation and visualization of geodata. My interests and research focuses on the use of passive and active satellite data for the analysis of geographic processes of the earth's surface, especially the monitoring of natural hazards as well as the monitoring of land surface changes in alpine and urban areas.
+
 
 Contact {#contact}
 --------------------------------------------------------------------------------
@@ -66,26 +65,6 @@ Contact {#contact}
 ```{r}
 CV %>% print_contact_info()
 ```
-
-
-
-Language Skills {#skills}
---------------------------------------------------------------------------------
-
-```{r}
-CV %>% print_skill_bars()
-```
-
-
-
-Disclaimer {#disclaimer}
---------------------------------------------------------------------------------
-
-Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
-
-The source code is available [on github.com/nstrayer/cv](https://github.com/moritzroesch/automated-cv).
-
-Last updated on `r Sys.Date()`.
 
 
 
@@ -111,94 +90,79 @@ CV %<>% print_section('education')
 
 
 
-Research Experience {data-icon=laptop}
+Research and work experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
+
 ```{r}
-CV %<>% print_section('research_positions')
+CV %<>% print_section('experience')
 ```
 
 
-
-Industry Experience {data-icon=suitcase}
+Software skills {data-icon=laptop}
 --------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('skills')
+```
 
 ::: aside
-```{r}
-CV %<>% print_text_block('industy_experience_aside')
-```
+#### <i class="fas fa-search-plus"></i> Research interests
+
+- Passive & active remote sensing
+
+- Spatial data science & machine learning
+
+- Natural hazards
+
+- Alpine regions
+
+- Urban regions
+
+- Synthetic aperture radar
+
+- GIS & webmap
+
 :::
 
-```{r}
-CV %<>% print_section('industry_positions')
-```
-
-<!-- These breaks just force a new page so section doesnt get cut off -->
-<br>
-<br>
-<br>
-
-Teaching Experience {data-icon=chalkboard-teacher}
+Language skills {data-icon=language}
 --------------------------------------------------------------------------------
 
-::: aside
 ```{r}
-CV %<>% print_text_block('teaching_experience_aside')
+CV %<>% print_section('language')
 ```
+
+
+Further education {data-icon=university}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('further_education')
+```
+
+
+Publications {data-icon=book}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('academic_articles',
+                      glue_template = "{authors} ({end}). {title}. *{journal}*. {doi} \n\n\n")
+```
+
+
+Foreign experience {data-icon=globe}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('foreign_experience')
+```
+
+
+
+:::aside
+Made with the R package [**datadrivencv**](https://github.com/nstrayer/datadrivencv) and [**pagedown**](https://github.com/rstudio/pagedown). 
+
+The source code is available on [GitHub](https://github.com/moritzroesch/automated-cv).
+
+Last updated on `r Sys.Date()`.
 :::
-
-```{r}
-CV %<>% print_section('teaching_positions')
-```
-
-
-
-Selected Data Science Writing {data-icon=chart-line}
---------------------------------------------------------------------------------
-
-::: aside
-```{r}
-CV %<>% print_text_block('data_science_writing_aside')
-```
-:::
-
-```{r}
-CV %<>% print_section('data_science_writings')
-```
-
-
-
-Selected Press (About)  {data-icon=newspaper}
---------------------------------------------------------------------------------
-
-```{r}
-CV %<>% print_section('about_me_press')
-```
-
-
-<br>
-<br>
-
-
-Selected Press (By)  {data-icon=newspaper}
---------------------------------------------------------------------------------
-
-```{r}
-CV %<>% print_section('by_me_press')
-```
-
-
-
-Selected Publications, Posters, and Talks {data-icon=book}
---------------------------------------------------------------------------------
-
-```{r}
-CV %<>% print_section('academic_articles')
-```
-
-
-
-```{r}
-CV %<>% print_links()
-```
-
