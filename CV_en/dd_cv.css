@@ -31,6 +31,8 @@ sup {
   /* Override default right margin for sidebar*/
   --pagedjs-margin-right: 0.2in;
   --pagedjs-margin-left: 0.2in;
+  --pagedjs-margin-top: .4in;
+  --pagedjs-margin-bottom: .15in;
 }
 
 /* Customize some of the sizing variables */
@@ -121,4 +123,15 @@ sup {
   padding: 0.5rem;
   margin: 0.5rem;
   box-shadow: 1px 1px 4px black;
+}
+
+/* Add page numbering  */
+.pagedjs_margin-top-left-corner {
+  visibility: unset !important;
+}
+.pagedjs_margin-top-left-corner>.pagedjs_margin-content::after {
+  content: counter(page);
+  position: absolute;
+  top: 8px;
+  left: 10px;
 }
