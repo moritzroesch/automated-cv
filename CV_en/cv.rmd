@@ -74,12 +74,6 @@ Main
 Moritz Rösch {#title}
 --------------------------------------------------------------------------------
 
-```{r}
-# Note the special double pipe so we modify the CV object in place
-CV %<>% print_text_block("intro") 
-```
-
-
 
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
