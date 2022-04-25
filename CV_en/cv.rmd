@@ -52,7 +52,7 @@ knitr::include_graphics("../img/DSC_9554.jpg")
 ```
 
 
-Biographie {#bio}
+Biography {#bio}
 ----------------------------------------------------------------------------------
 
 Born on 29.04.1997 in Radolfzell, Germany.<br/>
