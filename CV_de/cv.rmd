@@ -104,7 +104,9 @@ CV %<>% print_section('skills')
 
 - Passive & aktive Fernerkundung
 
-- Spatial Data Science & Machine Learning
+- Spatial Data Science
+
+- Machine Learning & Deep Learning
 
 - Naturgefahren
 

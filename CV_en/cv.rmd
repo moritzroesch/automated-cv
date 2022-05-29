@@ -105,7 +105,9 @@ CV %<>% print_section('skills')
 
 - Passive & active remote sensing
 
-- Spatial data science & machine learning
+- Spatial data science
+
+- Machine Learning & Deep Learning
 
 - Natural hazards
 
