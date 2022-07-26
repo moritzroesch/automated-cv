@@ -92,11 +92,22 @@ CV %<>% print_section('experience')
 ```
 
 
-Software Skills {data-icon=laptop}
+
+Publikationen {data-icon=book}
 --------------------------------------------------------------------------------
 
 ```{r}
-CV %<>% print_section('skills')
+CV %<>% print_section('academic_articles',
+                      glue_template = "{authors} ({end}). {title}. *{journal}*. {doi} \n\n\n")
+```
+
+
+Konferenzbeiträge {data-icon=users}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('conference_articles',
+                      glue_template = "{authors} ({end}). {title}. {type}. *{conference}*, {conference_date}, {conference_location}. \n\n\n")
 ```
 
 ::: aside
@@ -112,12 +123,19 @@ CV %<>% print_section('skills')
 
 - Alpine Regionen
 
-- Urbane Regionen
-
 - Synthetic Aperture Radar
 
 - GIS & Webmap
 :::
+
+
+Software Skills {data-icon=laptop}
+--------------------------------------------------------------------------------
+
+```{r}
+CV %<>% print_section('skills')
+```
+
 
 Sprachen {data-icon=language}
 --------------------------------------------------------------------------------
@@ -134,14 +152,13 @@ Weiterbildung {data-icon=university}
 CV %<>% print_section('further_education')
 ```
 
+:::aside
+Erstellt mit den R Paketen [**datadrivencv**](https://github.com/nstrayer/datadrivencv) und [**pagedown**](https://github.com/rstudio/pagedown). 
 
-Publikationen {data-icon=book}
---------------------------------------------------------------------------------
+Der Quellcode ist verfügbar auf [GitHub](https://github.com/moritzroesch/automated-cv).
 
-```{r}
-CV %<>% print_section('academic_articles',
-                      glue_template = "{authors} ({end}). {title}. *{journal}*. {doi} \n\n\n")
-```
+Zuletzt akutalisiert am `r Sys.Date()`.
+:::
 
 
 Auslandserfahrung {data-icon=globe}
@@ -150,13 +167,3 @@ Auslandserfahrung {data-icon=globe}
 ```{r}
 CV %<>% print_section('foreign_experience')
 ```
-
-
-
-:::aside
-Erstellt mit den R Paketen [**datadrivencv**](https://github.com/nstrayer/datadrivencv) und [**pagedown**](https://github.com/rstudio/pagedown). 
-
-Der Quellcode ist verfügbar auf [GitHub](https://github.com/moritzroesch/automated-cv).
-
-Zuletzt akutalisiert am `r Sys.Date()`.
-:::
