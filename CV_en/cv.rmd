@@ -130,14 +130,14 @@ CV %<>% print_section('conference_articles',
 :::
 
 
-Software skills {data-icon=laptop}
+Skills {data-icon=laptop}
 --------------------------------------------------------------------------------
 
 ```{r}
 CV %<>% print_section('skills')
 ```
 
-Language skills {data-icon=language}
+Languages {data-icon=language}
 --------------------------------------------------------------------------------
 
 ```{r}
