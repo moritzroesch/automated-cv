@@ -58,13 +58,12 @@ Geboren am 29.04.1997 in Radolfzell am Bodensee.<br/>
 Ich begeistere mich für die Analyse, Auswertung und Visualisierung von Geodaten. Meine Interessens- und Forschungsschwerpunkte liegen in der Nutzung von passiven und aktiven Satellitendaten zur Analyse von geographischen Prozessen der Erdoberfläche, insbesondere das Monitoring von Naturgefahren sowie das Monitoring des Wandels der Landoberfläche in alpinen und urbanen Räumen.
 
 
-  Kontakt {#contact}
+Kontakt {#contact}
 --------------------------------------------------------------------------------
 
 ```{r}
 CV %>% print_contact_info()
 ```
-
 
 
 Main
@@ -92,6 +91,29 @@ CV %<>% print_section('experience')
 ```
 
 
+::: aside
+#### <i class="fas fa-search-plus"></i> Interessensfelder
+
+- Passive & aktive Fernerkundung
+
+- Spatial Data Science
+
+- Machine Learning & Deep Learning
+
+- GIS & Webmap
+
+- Naturgefahren
+
+- Waldbrände
+
+- Vulkane
+
+- Alpine Regionen
+
+- Waldökosysteme
+
+:::
+
 
 Publikationen {data-icon=book}
 --------------------------------------------------------------------------------
@@ -110,23 +132,6 @@ CV %<>% print_section('conference_articles',
                       glue_template = "{authors} ({end}). {title}. {type}. *{conference}*, {conference_date}, {conference_location}. \n\n\n")
 ```
 
-::: aside
-#### <i class="fas fa-search-plus"></i> Interessensfelder
-
-- Passive & aktive Fernerkundung
-
-- Spatial Data Science
-
-- Machine Learning & Deep Learning
-
-- Naturgefahren
-
-- Alpine Regionen
-
-- Synthetic Aperture Radar
-
-- GIS & Webmap
-:::
 
 
 Skills {data-icon=laptop}
@@ -159,11 +164,3 @@ Der Quellcode ist verfügbar auf [GitHub](https://github.com/moritzroesch/automa
 
 Zuletzt akutalisiert am `r Sys.Date()`.
 :::
-
-
-Auslandserfahrung {data-icon=globe}
---------------------------------------------------------------------------------
-
-```{r}
-CV %<>% print_section('foreign_experience')
-```
