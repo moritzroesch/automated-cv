@@ -56,7 +56,7 @@ Biography {#bio}
 ----------------------------------------------------------------------------------
 
 Born on 29.04.1997 in Radolfzell, Germany.<br/>
-I am passionate about the analysis, evaluation and visualization of geodata. My interests and research focuses on the use of passive and active satellite data for the analysis of geographic processes of the Earth's surface, especially the monitoring of natural hazards as well as the monitoring of land surface changes in alpine and urban areas.
+I am passionate about the analysis and visualization of geodata. My interests and research focuses on the use of Earth observation data and machine or deep learning methods for the analysis of geographic processes of the Earth's surface, especially the monitoring of natural hazards. Thereby, I am passionate about studying wildfires in the context of anthropogenic climate change.
 
 
 Contact {#contact}
@@ -112,6 +112,8 @@ CV %<>% print_section('experience')
 - Alpine regions
 
 - Forest ecosystems
+
+- Climate change
 
 :::
 

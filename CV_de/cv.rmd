@@ -55,7 +55,7 @@ Biographie {#bio}
 ----------------------------------------------------------------------------------
 
 Geboren am 29.04.1997 in Radolfzell am Bodensee.<br/>
-Ich begeistere mich für die Analyse, Auswertung und Visualisierung von Geodaten. Meine Interessens- und Forschungsschwerpunkte liegen in der Nutzung von passiven und aktiven Satellitendaten zur Analyse von geographischen Prozessen der Erdoberfläche, insbesondere das Monitoring von Naturgefahren sowie das Monitoring des Wandels der Landoberfläche in alpinen und urbanen Räumen.
+Ich begeistere mich für die Analyse, Auswertung und Visualisierung von Geodaten. Meine Interessens- und Forschungsschwerpunkte liegen in der Nutzung von Erdbeobachtungsdaten und Machine bzw. Deep Learning Methoden zur Analyse von geographischen Prozessen der Erdoberfläche, insbesondere das Monitoring von Naturgefahren. Dabei besitze ich eine große Leidenschaft für die Erforschung von Waldbränden im Kontext des anthropogenen Klimawandels.
 
 
 Kontakt {#contact}
@@ -111,6 +111,8 @@ CV %<>% print_section('experience')
 - Alpine Regionen
 
 - Waldökosysteme
+
+- Klimawandel
 
 :::
 
