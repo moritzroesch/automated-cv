@@ -22,7 +22,7 @@ library(datadrivencv)
 
 datadrivencv::use_datadriven_cv(
   full_name = "Moritz Rösch",
-  data_location = "https://docs.google.com/spreadsheets/d/1WgzoCBQ66w9nVux-6Y5H-mFlcAyFskc50bg4_zL_cmk/",
+  data_location = "https://docs.google.com/spreadsheets/d/1WgzoCBQ66w9nVux-6Y5H-mFlcAyFskc50bg4_zL_cmk/edit?usp=sharing",
   pdf_location = "https://github.com/moritzroesch/automated-cv/tree/main/CV_de/output/roes_cv_de.pdf",
   source_location = "https://github.com/moritzroesch/automated-cv",
   output_dir = "CV_de"
